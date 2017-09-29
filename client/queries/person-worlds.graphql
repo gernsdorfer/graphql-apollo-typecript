@@ -1,0 +1,9 @@
+query PersonWorld ($personID: ID!) {
+
+    person (personID : $personID ){
+        name
+        homeworld {
+            homeName:name
+        }
+    }
+}

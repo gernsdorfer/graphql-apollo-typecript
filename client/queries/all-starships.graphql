@@ -1,0 +1,35 @@
+query AllStarships {
+    allStarships(first: 2) {
+        totalCount
+
+        pageInfo {
+            hasNextPage
+        },
+        starships {
+            name
+        }
+
+        edges {
+           ...starshipdsEdge
+        }
+    }
+}
+
+fragment pilotFragment on Person {
+    name
+    homeworld { name }
+}
+
+fragment starshipdsEdge on StarshipsEdge {
+    node {
+        id,
+        name,
+        pilotConnection {
+            edges {
+                node {
+                    ...pilotFragment
+                }
+            }
+        }
+    }
+}

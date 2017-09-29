@@ -1,0 +1,8 @@
+query Persons {
+    allPeople (first: 3){
+        totalCount
+        people {
+            name
+        }
+    }
+}

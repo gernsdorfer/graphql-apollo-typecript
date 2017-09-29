@@ -1,0 +1,124 @@
+{
+  "models/Article.graphql": {
+    "kind": "Document",
+    "definitions": [
+      {
+        "kind": "OperationDefinition",
+        "operation": "query",
+        "name": {
+          "kind": "Name",
+          "value": "Article",
+          "loc": {
+            "start": 6,
+            "end": 13,
+            "source": {
+              "body": "query Article {\n    articles {\n        id\n    }\n}",
+              "name": "GraphQL"
+            }
+          }
+        },
+        "variableDefinitions": [],
+        "directives": [],
+        "selectionSet": {
+          "kind": "SelectionSet",
+          "selections": [
+            {
+              "kind": "Field",
+              "alias": null,
+              "name": {
+                "kind": "Name",
+                "value": "articles",
+                "loc": {
+                  "start": 20,
+                  "end": 28,
+                  "source": {
+                    "body": "query Article {\n    articles {\n        id\n    }\n}",
+                    "name": "GraphQL"
+                  }
+                }
+              },
+              "arguments": [],
+              "directives": [],
+              "selectionSet": {
+                "kind": "SelectionSet",
+                "selections": [
+                  {
+                    "kind": "Field",
+                    "alias": null,
+                    "name": {
+                      "kind": "Name",
+                      "value": "id",
+                      "loc": {
+                        "start": 39,
+                        "end": 41,
+                        "source": {
+                          "body": "query Article {\n    articles {\n        id\n    }\n}",
+                          "name": "GraphQL"
+                        }
+                      }
+                    },
+                    "arguments": [],
+                    "directives": [],
+                    "selectionSet": null,
+                    "loc": {
+                      "start": 39,
+                      "end": 41,
+                      "source": {
+                        "body": "query Article {\n    articles {\n        id\n    }\n}",
+                        "name": "GraphQL"
+                      }
+                    }
+                  }
+                ],
+                "loc": {
+                  "start": 29,
+                  "end": 47,
+                  "source": {
+                    "body": "query Article {\n    articles {\n        id\n    }\n}",
+                    "name": "GraphQL"
+                  }
+                }
+              },
+              "loc": {
+                "start": 20,
+                "end": 47,
+                "source": {
+                  "body": "query Article {\n    articles {\n        id\n    }\n}",
+                  "name": "GraphQL"
+                }
+              }
+            }
+          ],
+          "loc": {
+            "start": 14,
+            "end": 49,
+            "source": {
+              "body": "query Article {\n    articles {\n        id\n    }\n}",
+              "name": "GraphQL"
+            }
+          }
+        },
+        "loc": {
+          "start": 0,
+          "end": 49,
+          "source": {
+            "body": "query Article {\n    articles {\n        id\n    }\n}",
+            "name": "GraphQL"
+          }
+        }
+      }
+    ],
+    "loc": {
+      "start": 0,
+      "end": 49,
+      "source": {
+        "body": "query Article {\n    articles {\n        id\n    }\n}",
+        "name": "GraphQL"
+      }
+    },
+    "name": {
+      "kind": "Name",
+      "value": "Article.graphql"
+    }
+  }
+}

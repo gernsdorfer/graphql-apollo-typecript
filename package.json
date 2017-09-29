@@ -1,0 +1,40 @@
+{
+  "name": "angular-graphql",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "buildSchema": "apollo-codegen introspect-schema http://localhost:3000 --output ./graphql.schema.json",
+    "createSchema": "apollo-codegen generate client/queries/*.graphql --schema ./graphql.schema.json --target ts --output client/schema.ts",
+    "schema": "npm run buildSchema && npm run createSchema",
+    "start": "./node_modules/.bin/webpack-dev-server"
+  },
+  "private": true,
+  "dependencies": {
+    "@types/node": "^8.0.28",
+    "apollo-client": "latest",
+    "babel-core": "^6.4.5",
+    "babel-plugin-inline-import": "^2.0.6",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-node5": "^10.5.0",
+    "babel-register": "^6.4.3",
+    "core-js": "^2.4.1",
+    "cors": "^2.8.1",
+    "express": "4.15.2",
+    "express-graphql": "0.6.3",
+    "graphql": "0.9.1",
+    "graphql-document-collector": "0.1.1",
+    "graphql-tag": "1.3.2",
+    "graphql-tools": "1.2.2",
+    "json-loader": "^0.5.7",
+    "raw-loader": "^0.5.1",
+    "ts-loader": "^2.3.7",
+    "typescript": "^2.2.1",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2",
+    "webpack-livereload-plugin": "^0.11.0"
+  },
+  "devDependencies": {
+    "tslint": "~4.5.0"
+  }
+}
