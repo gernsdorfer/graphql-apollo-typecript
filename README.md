@@ -1,4 +1,4 @@
-# AngularGraphql
+# Apollo GraphQl Typescript Client for swapi-graphql
 
 * run `npm install -g apollo-codegen`
 * run yarn
