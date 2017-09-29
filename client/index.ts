@@ -23,8 +23,6 @@ apolloClient.query<PersonsQuery>({
 });
 
 
-/*
-
 apolloClient.query<PersonWorldQuery>({
         query: gql`${personWorldsQuery}`,
         variables: <PersonWorldQueryVariables>{personID: '5'},
@@ -40,6 +38,3 @@ apolloClient.query<AllStarshipsQuery>({
 ).then(({data}) => {
     console.log('Starships', data.allStarships);
 });
-
-
-*/
